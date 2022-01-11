@@ -110,6 +110,7 @@ class Vertex<T, U>{
 
 
 ```swift
+## Сортировка
 
 extension Array where Element: Comparable{
     // Сортировка пузырьком
