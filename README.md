@@ -53,3 +53,28 @@ queu.push(element: 3)
 ![изображение](https://user-images.githubusercontent.com/45273279/148936661-e6d574dc-683b-42b9-8d5f-6d65e922cc9d.png)
 
 
+## Бинарное дерево (англ. binary tree) — это упорядоченное корневое дерево, у каждой вершины которого имеется не более двух сыновей. В бинарном дереве каждый сын произвольной вершины определяется как левый или правый.
+```swift
+class TreeNode<T>{
+    var value: T
+    
+    var left: TreeNode<T>?
+    var right: TreeNode<T>?
+    
+    init(value: T){
+        self.value = value
+    }
+}
+let top = TreeNode(value: 8)
+let left = TreeNode(value: 3)
+let right = TreeNode(value: 10)
+top.left = left
+top.right = right
+
+  //    0
+ //    / \
+//    3  10
+
+```
+![изображение](https://user-images.githubusercontent.com/45273279/148937255-ab0e0226-5f97-4ca1-a6af-9288ea745e4a.png)
+
