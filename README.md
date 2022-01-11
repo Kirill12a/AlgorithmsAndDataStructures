@@ -25,4 +25,4 @@ var array = Stack(elements: [1,24,5,64,32,52])
 array.pop()
 ```
 
-![изображение](https://user-images.githubusercontent.com/45273279/148935620-9f3ed50f-b569-4cdb-a5ce-85d40eba4937.png){:height="50%" width="50%"}
+![изображение](https://user-images.githubusercontent.com/45273279/148935620-9f3ed50f-b569-4cdb-a5ce-85d40eba4937.png)
