@@ -107,3 +107,46 @@ class Vertex<T, U>{
 ```
 ![Снимок экрана 2022-01-11 в 14 53 53](https://user-images.githubusercontent.com/45273279/148938121-59e4cfdf-0aae-4e46-8a6b-91c81317ed60.png)
 
+
+
+```swift
+
+extension Array where Element: Comparable{
+    // Сортировка пузырьком
+    func bubbleSort()->[Element]{
+        var array = self
+        for i in (0..<array.count-1).reversed(){
+            for j in (1..<(i+1)){
+                if array[j-1]>array[j]{
+                    let temp = array[j-1]
+                    array[j-1] = array[j]
+                    array[j] = temp
+                }
+            }
+        }
+        return array
+    }
+    
+//    Сортировка выбором
+    func selectionSort() -> [Element]{
+        var array = self
+        for i in 0..<array.count - 1{
+            var minIndex = i
+            for j in (i+1..<array.count){
+                if array[j] < array[minIndex]{
+                    minIndex = j
+                }
+            }
+            let temp = array[minIndex]
+            array[minIndex] = array[i]
+            array[i] = temp
+        }
+        return array
+
+    }
+    
+}
+[0,12,41,1,2,3,5,6].bubbleSort() 
+[0,12,41,1,2,3,5,6].selectionSort()
+
+```
