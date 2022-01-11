@@ -108,10 +108,9 @@ class Vertex<T, U>{
 ![Снимок экрана 2022-01-11 в 14 53 53](https://user-images.githubusercontent.com/45273279/148938121-59e4cfdf-0aae-4e46-8a6b-91c81317ed60.png)
 
 
-
-```swift
 ## Сортировка
 
+```swift
 extension Array where Element: Comparable{
     // Сортировка пузырьком
     func bubbleSort()->[Element]{
