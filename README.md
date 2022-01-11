@@ -92,12 +92,9 @@ class Edge<T, U>{//ребра
         self.label = label
         self.vertex = vertex
     }
-
-
 }
 
-
-class Vertex<T, U>{ // вршина
+class Vertex<T, U>{ 
     var value: T
     var edges: [Edge<T,U>]
 
