@@ -77,5 +77,4 @@ top.right = right
 //    3  10
 
 ```
-![изображение](https://user-images.githubusercontent.com/45273279/148937255-ab0e0226-5f97-4ca1-a6af-9288ea745e4a.png)
-
+![изображение](https://user-images.githubusercontent.com/45273279/148937397-92a6583d-3df2-4c8a-b7c8-f4ed9ea548c9.png)
