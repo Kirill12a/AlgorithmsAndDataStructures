@@ -78,3 +78,35 @@ top.right = right
 
 ```
 ![изображение](https://user-images.githubusercontent.com/45273279/148937397-92a6583d-3df2-4c8a-b7c8-f4ed9ea548c9.png)
+
+## Граф
+> Граф - это топологичекая модель, которая состоит из множества вершин и множества соединяющих их рёбер. При этом значение имеет только сам факт, какая вершина с 
+> какой соединена.
+
+```swift
+class Edge<T, U>{//ребра
+    var label: U
+    var vertex: Vertex<T>
+
+    init(label: U, vertex: Vertex<T>){
+        self.label = label
+        self.vertex = vertex
+    }
+
+
+}
+
+
+class Vertex<T, U>{ // вршина
+    var value: T
+    var edges: [Edge<T,U>]
+
+    init(value: T, edges: [Edge<T, U>]){
+        self.value = value
+        self.edges = edges
+    }
+}
+
+```
+![Снимок экрана 2022-01-11 в 14 53 53](https://user-images.githubusercontent.com/45273279/148938121-59e4cfdf-0aae-4e46-8a6b-91c81317ed60.png)
+
